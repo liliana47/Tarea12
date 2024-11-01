@@ -8,10 +8,12 @@
 <body>
     <script>
         console.log("EJERICIO NUMERO DOS");
-        let NumeroU = parseInt(prompt("Ingrese un numero, por favor"));
-
-        while(NumeroU < 0){
-            console.log("El numero negativo es: ", NumeroU);
+        let NumeroU;
+        while(NumeroU > 0){
+            NumeroU = parseInt(prompt("Ingrese un numero, por favor"));
+         if(NumeroU < 0){
+           console.log("Salio del ciclo"); break; 
+         }
         }
     </script>
 </body>
